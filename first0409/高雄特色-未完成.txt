@@ -1,0 +1,14 @@
+﻿<h2>夢時代</h2>
+<img src="./images/attractions/p07.jpg" alt="image" width="430">
+<h2>新高雄車站</h2>
+<img src="./images/attractions/p08.jpg" alt="image" width="430">
+<img src="./images/attractions/p09.jpg" alt="image" width="447" height="287">
+<h2>捷運美麗島站</h2>
+<img src="./images/attractions/p10.jpg" alt="image" width="430">
+
+<h2>賴潮州牛雜湯</h2>
+<img src="./images/food/p07.jpg" alt="image" width="430" height="290">
+<h2>興隆居</h2>
+<img src="./images/food/p08.jpg" alt="image" width="430" height="285">
+<img src="./images/food/p09.jpg" alt="image" width="425" height="285">
+

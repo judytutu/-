@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>聯絡我們</title>
+	<!--連結外部樣式表開始-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!--連結外部樣式表結束-->
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">     
+     	 <div class="container d-block">    
+          <div class="logo_top_index"><a href="index.html"><img src="images/logo.jpg" alt="logo" style="    width:147px;height:140px"> </a></div>
+          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center mt-4" id="navbarResponsive">
+          <ul class="navbar-nav">
+            <li class="nav-item"> <a class="nav-link" href="index.html">首頁</a></li>
+            <li class="nav-item"> <a class="nav-link" href="news.html">最新消息</a></li>
+            <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">景點</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+               <a class="dropdown-item" href="a01.html">駁二藝術特區</a>
+               <a class="dropdown-item" href="a02.html">旗后燈塔</a>
+               <a class="dropdown-item" href="a03.html">大魯閣草衙道</a>
+            </div>
+            </li>
+            <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">美食</a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="f01.html">春霞正港古早味粉圓冰</a>
+                  <a class="dropdown-item" href="f02.html">丹丹漢堡</a>
+                  <a class="dropdown-item" href="f03.html">林家鹽埕鴨肉意麵</a>
+               </div>
+            </li>
+            <li class="nav-item"> <a class="nav-link" href="contact.html">聯絡我們</a></li>
+          </ul>
+          </div>		
+       </div>
+    </nav>
+	<div id="contact" class="container mt-3">
+    <form action="" method="post" enctype="multipart/form-data">
+       <div class="form-group">
+           <label>姓名</label>
+           <input type="text" class="form-control" id="gname" name="gname" placeholder="請輸入您的姓名">
+       </div>
+       <div class="form-group">
+           <label>性別</label>
+           <div class="form-control">
+               <input type="radio" id="gmale" name="gsex" value="先生" checked>
+               <label>先生</label>
+               <input type="radio" id="gfemale" name="gsex" value="小姐">
+               <label>小姐</label>
+           </div>
+       </div>
+       <div class="form-group">
+           <label>電子郵件</label>
+           <input type="text" class="form-control" id="gemail" name="gemail" placeholder="請輸入您的電子郵件">
+       </div>
+       <div class="form-group">
+           <label>想說什麼呢</label>
+           <textarea placeholder="請輸入留言內容" class="form-control" id="gcontent" rows="3" name="gcontent"></textarea>
+       </div>
+       <button type="submit" class="btn btn-info mb-4">送出</button>
+  </form>
+	</div>
+	<div id="footer">
+       <p>&copy; 2019 by KW. All rights reserved.</p>
+       <ul>
+            <li>
+                <a href="https://twitter.com/?lang=zh-tw" id="twitter">twitter</a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/kh.inmap.tw/" id="facebook">高雄美食臉書</a>
+            </li>
+            <li>
+                <a href="https://www.google.com.tw/" id="googleplus">google</a>
+            </li>
+            <li>
+                <a href="https://tw.yahoo.com//" id="pinterest">yahoo</a>
+            </li>
+       </ul>
+   </div>
+   <!--連結外部js檔開始-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   <!--連結外部js檔結束-->
+</body>
+</html>

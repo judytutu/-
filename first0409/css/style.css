@@ -1,0 +1,341 @@
+/* Website Template by freewebsitetemplates.com */
+*{
+   font-family: 'Noto Sans TC',sans-serif;
+   margin: 0;
+   padding: 0;
+}
+/*loading動畫樣式開始*/
+#loadingbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, .7);
+    z-index: 50
+}
+.spinner {
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    font-size: 10px;
+    position: absolute;
+    z-index: 99;
+    top: calc(50vh - 40px);
+    left: calc(50vw - 50px);
+}
+.spinner > div {
+    background-color: #333;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out
+}
+
+.spinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s
+}
+
+.spinner .rect3 {
+    -webkit-animation-delay: -1s;
+    animation-delay: -1s
+}
+
+.spinner .rect4 {
+    -webkit-animation-delay: -.9s;
+    animation-delay: -.9s
+}
+
+.spinner .rect5 {
+    -webkit-animation-delay: -.8s;
+    animation-delay: -.8s
+}
+
+@-webkit-keyframes sk-stretchdelay {
+
+    0%,
+    40%,
+    100% {
+        -webkit-transform: scaleY(0.4)
+    }
+
+    20% {
+        -webkit-transform: scaleY(1.0)
+    }
+}
+
+@keyframes sk-stretchdelay {
+
+    0%,
+    40%,
+    100% {
+        transform: scaleY(0.4);
+        -webkit-transform: scaleY(0.4)
+    }
+
+    20% {
+        transform: scaleY(1.0);
+        -webkit-transform: scaleY(1.0)
+    }
+}
+/*loading動畫樣式結束*/
+
+/*logo的部分*/
+.logo_top_index{
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 20px;
+}
+/*幻燈片樣式*/
+.bx-wrapper{
+    margin: 20px auto 80px;
+    border: 0px;
+    box-sizing: border-box;
+}
+/*導覽列開始*/
+.container{
+    position: relative;
+}
+.container .navbar-brand{
+	font-size: 30px;
+    color: #FF5F5F; 
+    text-shadow: 1px 1px 0px #212121;
+    text-decoration: none;
+    padding-right: 220px;
+}
+.container .navbar-brand:hover{
+    color:#FF5F5F;
+}
+.container ul{
+    list-style-type: none;
+    text-align: center;   
+}
+.container ul li{
+    display: inline-block;
+    box-sizing: border-box;
+}
+.container ul li:hover {
+    cursor: pointer;
+    border-radius: 25% 50% / 40% 12%;
+    background-color:#ee5372;
+}
+.container a.nav-link{
+	color: black;
+	font-size: 23px;
+	font-weight:400;
+	text-decoration: none;
+}
+.container ul li:hover a#navbarDropdown{
+    color: white;
+    font-weight: 500;
+}
+.container .nav-item:hover .nav-link{
+    color: white;
+    font-weight: 500;
+}
+/*子選單*/
+.container ul li .dropdown-item{
+    text-align: center;
+    font-size: 16px;
+    color:#696969;
+    font-weight: 400;
+    line-height: 30px
+}
+.container ul li .dropdown-item:hover{
+    color: white;
+    background-color: #35526e;
+}
+.dropdown-menu.show{
+    border: 0px
+}
+   /*子選單箭頭方向設定*/
+   .dropdown-toggle[aria-expanded="true"]::after {
+       transform: rotate(180deg);
+   }
+   
+   .dropdown-toggle::after {
+       transition: .5s ease;
+   }
+/*導覽列結束*/
+
+/*固定選單開始*/
+.fixTop {
+    position: sticky;;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 0 2px 3px #333;
+    opacity: .8;
+    background-color: #fff
+}
+.fixTop li {
+    transition: .5s ease;
+}
+/*固定選單結束*/
+
+/*最新消息樣式開始*/
+.news_top_title{
+    text-align: center;
+    margin-top: 20px;
+    font-size:30px;
+}
+.news-table{
+    box-sizing: border-box;
+    margin:10px 0 40px
+}
+.t_tr02{
+    border:1px solid #FAFAFA;
+}
+.a5{
+    text-align: center;
+	text-decoration: none;
+	font-size: 100%;
+	font-weight: 450;
+	color: #FAFAFA;
+}
+.table_td01,.table_td02{
+    border-bottom: 1px solid #FAFAFA;
+    background-color: #f7d097;
+    height: 38px;
+}
+.table_td01{
+    padding:3px;
+    border-right: 1px solid #FAFAFA;
+}
+.table_td01 a{
+    text-decoration: none;
+    color: #436ea8;
+    font-weight: 400;
+}
+
+.table_td01 a:hover{
+    text-decoration:none;
+    color: red;
+}
+/*最新消息樣式結束*/
+
+/*內文區塊樣式開始*/
+#a_content,.f_content,#news_content{
+    position: relative;
+}
+#a_content h1,.f_content h1{
+    text-align: center;
+    font-size:45px;
+    font-weight: 400;
+    margin-top: 10px;
+    text-shadow: 2px 3px 7px #f0de0f;
+}
+.af_article{
+    font-family:Microsoft JhengHei;
+    font-size:18px;
+    line-height: 30px;
+    font-weight: 550;
+    border: 10px solid;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+.news_title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 450;
+    text-shadow: 1px 2px 6px gray
+}
+.news_article{
+    border: 10px solid;
+    box-sizing: border-box;
+    line-height: 30px;
+    font-size: 18px;
+}
+#news_content img{
+    border-radius: 10%;
+    text-align: center;
+}
+.borderimg1{
+    border-image: url(../images/border1.png) 30 round;
+    padding: 15px;
+}
+@keyframes lineAnimate {
+    from {
+        background-position: 0 0
+    }
+
+    to {
+        background-position: 100% 100%
+    }
+}
+#a_content img,.f_content img{
+    border-radius: 10%
+}
+/*內文區塊樣式結束*/
+
+.clearfix {
+    width: 100%;
+    height: 1px;
+    clear: both
+}
+
+/*頁尾樣式*/
+#footer {
+	background: #252525;
+	margin: 0 auto;
+	padding: 36px 0 42px;
+    overflow: hidden;
+    bottom: 0;
+}
+#footer p {
+	color: #fff;
+	float: left;
+	line-height: 44px;
+	margin: 0 0 0 10px;
+	padding: 0;
+}
+#footer ul {
+	float: right;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	width: 256px;
+}
+#footer ul li {
+    display: inline-block;
+	float: left;
+	list-style: none;
+	margin: 0 10px;
+	padding: 0;
+	width: 44px;
+}
+#footer ul li a {
+	background: url(../images/icons.jpg) no-repeat 0 0;
+	display: block;
+	height: 44px;
+	margin: 0;
+	padding: 0;
+	text-indent: -99999px;
+	width: 44px;
+}
+#footer ul li #twitter {
+	background-position: 0 0;
+}
+#footer ul li #twitter:hover {
+	background-position: -44px 0;
+}
+#footer ul li #facebook {
+	background-position: 0 -44px;
+}
+#footer ul li #facebook:hover {
+	background-position: -44px -44px;
+}
+#footer ul li #googleplus {
+	background-position: 0 -88px;
+}
+#footer ul li #googleplus:hover {
+	background-position: -44px -88px;
+}
+#footer ul li #pinterest {
+	background-position: 0 -132px;
+}
+#footer ul li #pinterest:hover {
+	background-position: -44px -132px;
+}
